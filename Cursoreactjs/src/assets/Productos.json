@@ -1,0 +1,115 @@
+[
+    {
+        "id": 1,
+        "title": " Castillo Himeji",
+        "description": "Rinde homenaje a la longeva y majestuosa belleza de una de las edificaciones más veneradas de Japón con el modelo de exposición LEGO® Architecture Castillo de Himeji (21060). Transpórtate a la ciudad de Himeji sin salir de casa mientras recreas sus genuinos detalles al estilo LEGO, como las torrecillas, los senderos y los muros asimétricos. Retira la parte superior de la estructura principal para ver una interpretación simplificada de la distribución interior.",
+        "stock": 15,
+        "price": 99.999,
+        "image": "/images/Architecture/castillohimeji.webp",
+        "category": "Architecture",
+        "enOferta": "Oferta"
+    },
+    {
+        "id": 2,
+        "title": "Notre Dame",
+        "description": "Vive cada etapa del desarrollo de uno de los monumentos parisinos más icónicos con el set de construcción para adultos LEGO® Architecture Notre Dame de París (21061). Esta maqueta arquitectónica te llevará a disfrutar de un viaje por la historia del edificio que comienza en 1163, año en que se puso la primera piedra, y continúa por la restauración a cargo del arquitecto Viollet-le-Duc en el siglo XIX hasta su majestuosa apariencia antes del incendio de 2019.",
+        "stock": 4,
+        "price": 99.999,
+        "image": "/images/Architecture/notredame.webp",
+        "category": "Architecture"
+    },
+    {
+        "id": 3,
+        "title": "Templo del Idolo Dorado",
+        "description": "¿Preparado para disfrutar de un poco de nostalgia? Rinde homenaje a Indiana Jones™ construyendo y exponiendo el detallado set LEGO® Templo del Ídolo Dorado (77015). Sumérgete en la gratificante experiencia de construir la emocionante escena inicial de En Busca del Arca Perdida para, después, exponerla con orgullo.",
+        "stock": 10,
+        "price": 79.999,
+        "image": "/images/IndianaJones/IndianaJonesTemple.webp",
+        "category": "IndianaJones",
+        "enOferta": "Oferta"
+        
+    },
+    {
+        "id": 4,
+        "title": "Persecucion del Caza",
+        "description": "El set LEGO® Indiana Jones™ Persecución del Caza (77012) tiene todo lo que necesitan los niños a partir de 8 años para sumergirse en largas horas de juego creativo. Incluye un fantástico caza con hélice, 2 cañones que disparan y alas desmontables, así como un chulísimo coche descapotable antiguo con un arcón en la parte trasera que contiene un paraguas y una pistola.",
+        "stock": 5,
+        "price": 79.999,
+        "image": "/images/IndianaJones/IndianaJonesChase.webp",
+        "category": "IndianaJones"
+    },
+    {
+        "id": 5,
+        "title": "Escape de la Tumba Perdida",
+        "description": "Los peques podrán sentir todo el vértigo de la película En Busca del Arca Perdida con el set de construcción LEGO® Indiana Jones™ Huida de la Tumba Perdida (77013). El juego, fantástico como regalo para niños y niñas a partir de 8 años, incluye un templo con 2 estatuas, un pasadizo secreto, una momia y serpientes, tanto en el suelo como saliendo de una pared.",
+        "stock": 13,
+        "price": 79.999,
+        "image": "/images/IndianaJones/IndianaJonesTomb.webp",
+        "category": "IndianaJones"
+    },
+    {
+        "id": 6,
+        "title": "Arwen & Aragorn",
+        "description": "Evoca la escena de la boda de Aragorn™ y Arwen™ en El Señor de los Anillos: El Retorno del Rey con estas figuras LEGO® BrickHeadz™ coleccionables (40632). Aragorn lleva sus ropajes de rey y una corona, y Arwen luce un vestido de novia verde construido con ladrillos y una tiara. Este set para construir y exponer es un precioso detalle, obsequio de cumpleaños o regalo por las fiestas para fans de El Señor de los Anillos, constructores LEGO y coleccionistas de modelos LEGO BrickHeadz.",
+        "stock": 30,
+        "price": 19.999,
+        "image": "/images/LordOfTheRings/Arwen&Aragorn.webp",
+        "category": "LordOfTheRings",
+        "enOferta": "Oferta"
+    },
+    {
+        "id": 7,
+        "title": "Barad-dûr",
+        "description": "La Torre Oscura, uno de los lugares más emblemáticos de la Tierra Media, cobra vida en un detallado modelo LEGO® repleto de secretos y sorpresas. Da vida a uno de los lugares más emblemáticos de la Tierra Media.",
+        "stock": 3,
+        "price": 49.999,
+        "image": "/images/LordOfTheRings/Baradur.webp",
+        "category": "LordOfTheRings"
+    },
+    {
+        "id": 8,
+        "title": "Gandalf & Balrog",
+        "description": "“¡No puedes pasar!”. Rinde homenaje a un enfrentamiento inolvidable de El Señor de los Anillos: La Comunidad del Anillo con el set de construcción coleccionable LEGO® BrickHeadz™ Gandalf el Gris y Balrog™ (40631). Recrea icónicos detalles del mago Gandalf el Gris y la llameante bestia Balrog, y expón las figuras construibles con orgullo. Este set es un mágico premio sorpresa, obsequio de cumpleaños o regalo por las fiestas para fans de El Señor de los Anillos, constructores LEGO y coleccionistas de modelos LEGO BrickHeadz.",
+        "stock": 8,
+        "price": 19.999,
+        "image": "/images/LordOfTheRings/Gandalf&Balrog.webp",
+        "category": "LordOfTheRings"
+    },
+    {
+        "id": 9,
+        "title": "Legolas & Gimli",
+        "description": "Evoca las épicas aventuras de la Comunidad del Anillo con las figuras LEGO® BrickHeadz™ Legolas y Gimli™ (40751). Ambos modelos de este set de construcción de juguetes inspirado en los héroes de El Señor de los Anillos para mayores de 10 años cuentan con decoraciones reconocibles al instante que encantarán a los fans. La figura de Legolas sostiene un arco y flechas, y la figura de Gimli empuña un hacha. Este set coleccionable, una divertida idea de regalo para niños, niñas y cualquier fan de ElSeñor de los Anillos, pertenece a una amplia colección LEGO BrickHeadz.",
+        "stock": 16,
+        "price": 19.999,
+        "image": "/images/LordOfTheRings/Legolas&Gimli.webp",
+        "category": "LordOfTheRings",
+        "enOferta": "Oferta"
+    },
+    {
+        "id": 10,
+        "title": "AT-AT",
+        "description": "Es el AT-AT (75313) que estaban esperando todos los fans de LEGO® Star Wars™. La mítica maqueta Ultimate Collector Series para construir y exponer cuenta con patas y cabeza articuladas, cañones con acción de retroceso realista, cañones giratorios, escotilla de lanzamiento de bombas y gancho para sujetar el cable de Luke Skywalker, como en la batalla de Hoth.",
+        "stock": 1,
+        "price": 69.999,
+        "image": "/images/StarWars/at-at.webp",
+        "category": "StarWars"
+    },
+    {
+        "id": 11,
+        "title": "Crucero de Ataque Clase Venator de la Republica",
+        "description": "Celebra los 20 años de las Guerras Clon y sus emocionantes aventuras Deja que tu mente viaje hasta una galaxia muy, muy lejana mientras construyes y exhibes una impresionante versión de Ultimate Collector Series del Crucero de ataque clase Venator de la República. Recrea sus detalles de gran autenticidad, como las llamativas franjas rojas, el puente de mando y el hangar, donde un modelo a escala construible de una Cañonera de la República espera su siguiente misión.",
+        "stock": 4,
+        "price": 150.500,
+        "image": "/images/StarWars/ClassVenator.webp",
+        "category": "StarWars"
+    },
+    {
+        "id": 12,
+        "title": "R2-D2",
+        "description": "Encariñarse aún más con el droide más adorable de la galaxia de Star Wars™ es fácil con la figura de juguete LEGO® R2-D2 (75379). Este divertido modelo para construir y exponer, ideal para niños y niñas a partir de 10 años, incluye infinidad de detalles de gran realismo para interpretar momentos clásicos e historias de fantasía originales. Cuenta con cabeza que gira 360 grados y una tercera pierna acoplable, así como con periscopio y herramientas conectables.",
+        "stock": 9,
+        "price": 49.999,
+        "image": "/images/StarWars/r2d2.webp",
+        "category": "StarWars"
+    }
+]

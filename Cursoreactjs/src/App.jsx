@@ -4,15 +4,25 @@ import viteLogo from '/vite.svg'
 import NavBar from './components/NavBar/NavBar'
 import './App.css'
 import ItemListContainer from './components/ItemListContainer'
+import ItemDetailContainer from "./components/ItemDetailContainer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-     <NavBar/>
-     <ItemListContainer texto ={"No hay productos a la vista"} />
+    <div>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+        <Route path={"/"} element={<ItemListContainer />} />
+          <Route path={"/category/:id"} element={<ItemListContainer />} />
+          <Route path={"/enOferta/:id"} element={<ItemListContainer />} />
+          <Route path={"/item/:id"} element={<ItemDetailContainer />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
     </>
   )
 }

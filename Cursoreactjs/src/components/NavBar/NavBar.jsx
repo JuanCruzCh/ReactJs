@@ -1,133 +1,71 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
 import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import Badge from '@mui/material/Badge';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Link } from 'react-router-dom';
 const pages = ['Productos', 'Categorias', 'Ofertas'];
 
 
 function NavBar() {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
+  
+  const [setAnchorElUser] = React.useState(null);
+  
+
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
 
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
-
-  return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-            <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            Legoland
-          </Typography>
-
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="Center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
-            ))}
-          </Box>
-
+  return(
+  <nav className="navbar navbar-expand-lg bg-primary">
+  <div className="container-fluid">
+    <a className="navbar-brand " href="/">Legoland</a>
+    
+    <div className="collapse navbar-collapse" id="navbarNav">
+      <ul className="navbar-nav">
+        <li className="nav-item">
+          <a className="nav-link active" aria-current="page" href="/">Inicio</a>
+        </li>
+        <li className="nav-item " aria-current="page">
+  <p>
+  <button class="btn text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    Categorias
+  </button>
+</p>
+<div style={{minHeight:'120px'}} className="z-1 position-absolute rounded-2" >
+  <div className="collapse multi-collapse" id="collapseWidthExample">
+    <div className="card card-body" style={{width:'300px'}}>
+      <ul className="list-group list-group-flush text-md-end text-uppercase">
+        <p>
+          <a className="text-black fw-bolder" href="/category/Architecture">Architecture</a>
+        </p>
+        <p>
+          <a className="text-black fw-bolder" href="/category/IndianaJones">Indiana Jones</a>
+        </p>
+        <p>
+          <a className="text-black fw-bolder" href="/category/LordOfTheRings">El Señor de los Anillos</a>
+        </p>
+        <p>
+          <a className="text-black fw-bolder" href="/category/StarWars">Star Wars</a>
+        </p>
+      </ul>
+    </div>
+  </div>
+</div>
+    
+        </li>
+        <li className="nav-item k">
+          <a className="nav-link text-black" href="/">Ofertas</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div>
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open minicart">
-                <Badge color="secondary" badgeContent={1}>
+                <Badge color="secondary" badgeContent={5}>
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <ShoppingCartIcon/>
               </IconButton>
@@ -135,9 +73,11 @@ function NavBar() {
             </Tooltip>
             
           </Box>
-        </Toolbar>
-      </Container>
-    </AppBar>
-  );
-}
+  </div>
+  
+</nav>
+
+  )}
+
+  
 export default NavBar;
