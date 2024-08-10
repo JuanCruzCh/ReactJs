@@ -48,7 +48,7 @@ const Checkout = () => {
                         {orderId ? <div className="alert alert-light p-5" role="alert">
                             <p><img src="/images/bag-fill.svg" alt="Carrito" width={80} /></p>
                             <h3>Gracias por tu compra!</h3>
-                            <p>Tu Número de Compra es: <b>{orderId}</b></p>
+                            <p>Tu orden de Compra es: <b>{orderId}</b></p>
                             <Link to={"/"} className="btn btn-dark rounded-pill mt-5">Volver a la Página Principal</Link>
                         </div> : ""}
                     </div>
@@ -110,12 +110,6 @@ const Checkout = () => {
                             </tbody>
                         </table>
                     </div>
-                </div>
-                <div className="row">
-                    {orderId && <div>
-                        <h3>Gracias por su compra!</h3>
-                        <p>Tu orden de compra es: <b>{orderId}</b></p>
-                        </div>}
                 </div>
             </div>
         )
