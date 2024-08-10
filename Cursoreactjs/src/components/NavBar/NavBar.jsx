@@ -16,7 +16,7 @@ function NavBar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active text-decoration-underline fs-4" aria-current="page" href="/">Inicio</a>
+            <Link className="nav-link active text-decoration-underline fs-4" to={"/"}>Inicio</Link>
             </li>
             <li className="nav-item " aria-current="page">
               <p>

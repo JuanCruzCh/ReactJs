@@ -9,7 +9,7 @@ const ItemDetail = ({item}) => {
     const onAdd = (quantity) => {
         addItem(item, quantity);
     }
-
+console.log(item)
     return (
         <div className="container my-5">
             <div className="row">
