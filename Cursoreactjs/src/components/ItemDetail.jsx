@@ -1,19 +1,27 @@
+import { useCallback, useContext } from "react"
 import ItemCount from "./ItemCount"
-
+import { CartContext } from "./context/CartContext"
+import CartWidget from "./CartWidget"
 
 const ItemDetail = ({item}) => {
+    const {addItem} = useContext(CartContext);
+
+    const onAdd = (quantity) => {
+        addItem(item, quantity);
+    }
+
     return (
         <div className="container my-5">
             <div className="row">
                 <div className="col-md-5 offset-md-1">
-                    <img src={item.image} alt={item.title} className="img-fluid" />
+                    <img src={item.Image} alt={item.Title} className="img-fluid" />
                 </div>
                 <div className="col-md-5">
-                    <h1>{item.title}</h1>
-                    <p><b>${item.price}</b></p>
-                    <div className="alert alert-light" role="alert">Hasta 6 cuotas sin interés con todos los bancos</div>
-                    <p ClassName="text-break" >{item.description}</p>
-                    <ItemCount stock={item.stock} />
+                    <h1 className="text-decoration-underline">{item.Title}</h1>
+                    <p><b>${item.Price}</b></p>
+                    <p ClassName="text-break" >{item.Description}</p>
+                    <div className="alert alert-dark " role="alert">Hasta 6 cuotas sin interés con todos los bancos</div>
+                    <ItemCount stock={item.stock} onAdd={onAdd}/>
                 </div>
             </div>
         </div>
